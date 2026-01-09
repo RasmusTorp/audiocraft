@@ -66,7 +66,8 @@ def _get_state_dict(
             filename=filename,
             cache_dir=cache_dir,
             library_name="audiocraft",
-            library_version=audiocraft.__version__,
+            # library_version=audiocraft.__version__,
+            library_version="1.4.0a2",
         )
         return torch.load(file, map_location=device)
 
